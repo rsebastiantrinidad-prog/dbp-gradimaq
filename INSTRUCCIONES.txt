@@ -1,0 +1,7 @@
+GRADIMAQ SAS - versión minimizada y ofuscada
+--------------------------------------------
+Subir index.html y logo.png a la misma carpeta del hosting.
+Se requiere conexión a Internet para fotografías y librerías externas.
+Esta ofuscación dificulta la reutilización casual del código pero NO
+impide copiar los archivos, reconstruir la página o inspeccionar el DOM
+mediante las herramientas de desarrollador. No guardar secretos en frontend.
