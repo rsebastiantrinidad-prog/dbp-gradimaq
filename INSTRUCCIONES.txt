@@ -5,3 +5,18 @@ Se requiere conexión a Internet para fotografías y librerías externas.
 Esta ofuscación dificulta la reutilización casual del código pero NO
 impide copiar los archivos, reconstruir la página o inspeccionar el DOM
 mediante las herramientas de desarrollador. No guardar secretos en frontend.
+
+AVISO "SITIO POR EL MOMENTO NO DISPONIBLE"
+------------------------------------------
+index.html lleva, antes de </body>, un bloque entre los comentarios
+AVISO-DBP:INICIO y AVISO-DBP:FIN. Cubre el sitio con un velo difuminado, con el
+logo de Driven by People y los botones de WhatsApp y de su sitio web.
+- El sitio se ve normal durante 3 segundos; despues aparece el velo con blur.
+  Para cambiar la espera: en el CSS del bloque, el "3s" de "aviso-dbp-velo" (y
+  el "3.25s" del cartel); en el script del final, el 3050 (milisegundos).
+- Para volver a publicar el sitio normal: borrar ese bloque completo, o hacer
+  "git revert" del commit del aviso (el original queda en el historial de git).
+- La carpeta _respaldo es solo una copia local del original: no esta en git y
+  no hay que subirla al hosting (solo index.html y logo.png).
+- Es un bloqueo visual: el contenido del sitio sigue en el código de la página.
+  Para un bloqueo real, quitar el sitio del hosting o publicar otro index.html.
